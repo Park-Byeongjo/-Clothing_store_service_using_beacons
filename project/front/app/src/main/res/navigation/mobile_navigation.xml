@@ -7,19 +7,31 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.leftmeunactivity.ui.home.HomeFragment"
+        android:name="com.example.bss.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
+            app:destination="@id/nav_search" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_setting"
+            app:destination="@id/nav_setting" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_location"
+            app:destination="@id/nav_location" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_voice"
+            app:destination="@id/nav_voice" />
     </fragment>
     <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.example.leftmeunactivity.ui.home.HomeSecondFragment"
+        android:id="@+id/nav_search"
+        android:name="com.example.bss.ui.search.SearchFragment"
         android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
+        tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
             app:destination="@id/nav_home" />
@@ -30,14 +42,26 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.leftmeunactivity.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_location"
+        android:name="com.example.bss.ui.location.LocationFragment"
+        android:label="@string/nav_location"
+        tools:layout="@layout/fragment_location" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.leftmeunactivity.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_notifications"
+        android:name="com.example.bss.ui.notifications.NotificationsFragment"
+        android:label="@string/nav_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.bss.ui.setting.SettingFragment"
+        android:label="@string/nav_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_voice"
+        android:name="com.example.bss.ui.voice.VoiceFragment"
+        android:label="@string/nav_voice"
+        tools:layout="@layout/fragment_voice" />
 </navigation>
