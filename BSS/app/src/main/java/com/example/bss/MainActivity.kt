@@ -1,14 +1,22 @@
 package com.example.bss
 
+import android.content.Context
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
+import android.view.View
+import android.view.ViewGroup
+import android.widget.*
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.ui.*
+import com.example.bss.R.id.listview
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.coupon_row.*
+import kotlinx.android.synthetic.main.fragment_store_information.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +37,12 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_search, R.id.nav_notifications, R.id.nav_location, R.id.nav_setting, R.id.nav_voice
+                R.id.nav_home,
+                R.id.nav_search,
+                R.id.nav_notifications,
+                R.id.nav_location,
+                R.id.nav_setting,
+                R.id.nav_voice
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -37,18 +50,20 @@ class MainActivity : AppCompatActivity() {
 
         val bnavView: BottomNavigationView = findViewById(R.id.bottom_nav_view)
         bnavView.setupWithNavController(navController)
+
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-    }
-    
+        override fun onCreateOptionsMenu(menu: Menu): Boolean {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            menuInflater.inflate(R.menu.main, menu)
+            return true
+        }
+
+        override fun onSupportNavigateUp(): Boolean {
+            val navController = findNavController(R.id.nav_host_fragment)
+            return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+        }
+
 
 }
