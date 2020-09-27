@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.voice.VoiceFragment" />
+
+        <activity android:name=".ui.nearby_clothes.ItemFragment" />
         <activity android:name=".ui.setting.SettingFragment" />
         <activity android:name=".ui.location.LocationFragment" />
         <activity

@@ -6,7 +6,7 @@
     <string name="nav_search">검색</string>
     <string name="nav_notifications">알람</string>
     <string name="nav_location">가까운 매장</string>
-    <string name="nav_voice">시각 장애인 서비스</string>
+    <string name="nav_nearby_clothes_list">근처 옷 보기</string>
     <string name="nav_setting">설정</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -12,13 +12,13 @@ import com.example.bss.dummy.DummyContent.DummyItem
  * [RecyclerView.Adapter] that can display a [DummyItem].
  * TODO: Replace the implementation with code for your data type.
  */
-class MyItemRecyclerViewAdapter(
+class MyItemRecyclerViewAdapter3(
     private val values: List<DummyItem>
-) : RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<MyItemRecyclerViewAdapter3.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_alarm_item, parent, false)
+            .inflate(R.layout.fragment_nearby_clothes_list, parent, false)
         return ViewHolder(view)
     }
 
@@ -31,7 +31,7 @@ class MyItemRecyclerViewAdapter(
     override fun getItemCount(): Int = values.size
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val idView: TextView = view.findViewById(R.id.storeImage)
+        val idView: TextView = view.findViewById(R.id.item_number)
         val contentView: TextView = view.findViewById(R.id.content)
 
         override fun toString(): String {

@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_notifications,
                 R.id.nav_location,
                 R.id.nav_setting,
-                R.id.nav_voice
+                R.id.nav_nearby_clothes_list
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

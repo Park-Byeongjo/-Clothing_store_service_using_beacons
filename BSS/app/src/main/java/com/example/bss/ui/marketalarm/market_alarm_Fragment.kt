@@ -1,3 +1,4 @@
+/*
 package com.example.bss.ui.marketalarm
 
 import android.content.Context
@@ -38,7 +39,7 @@ class market_alarm_Fragment : Fragment() {
         return root
     }
 
-    private class MyCustomAdapter(context: Context) : BaseAdapter() {
+    private class MyCustomAdapter(context: market_alarm_Fragment) : BaseAdapter() {
         private val mContext: Context = context
 
         //데이터 어레이
@@ -72,3 +73,4 @@ class market_alarm_Fragment : Fragment() {
         }
     }
 }
+ */

@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".ItemFragment"
-    tools:listitem="@layout/fragment_item"
-    android:background="@drawable/background"/>
+    tools:context=".ui.nearby_clothes.ItemFragment"
+    tools:listitem="@layout/fragment_alarm_item"
+    android:background="@drawable/background">
+</androidx.recyclerview.widget.RecyclerView>

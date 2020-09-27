@@ -1,4 +1,4 @@
-package com.example.bss.ui;
+/*package com.example.bss.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,21 +14,23 @@ import android.view.ViewGroup;
 
 import com.example.bss.R;
 import com.example.bss.ui.dummy.DummyContent;
-
+*/
 /**
  * A fragment representing a list of Items.
  */
+/*
 public class alarmFragment extends Fragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
     private int mColumnCount = 1;
-
+*/
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
+    /*
     public alarmFragment() {
     }
 
@@ -69,4 +71,4 @@ public class alarmFragment extends Fragment {
         }
         return view;
     }
-}
+}*/

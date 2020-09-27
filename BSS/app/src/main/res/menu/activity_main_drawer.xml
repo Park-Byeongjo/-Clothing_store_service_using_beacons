@@ -17,9 +17,9 @@
             android:icon="@drawable/ic_nav_location"
             android:title="@string/nav_location" />
         <item
-            android:id="@+id/nav_voice"
-            android:icon="@drawable/ic_nav_voice"
-            android:title="@string/nav_voice" />
+            android:id="@+id/nav_nearby_clothes_list"
+            android:icon="@drawable/ic_nav_near"
+            android:title="@string/nav_nearby_clothes_list" />
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/ic_nav_setting"

@@ -1,3 +1,4 @@
+/*
 package com.example.bss.ui;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,11 +11,11 @@ import android.widget.TextView;
 import com.example.bss.ui.dummy.DummyContent.DummyItem;
 
 import java.util.List;
-
+*/
 /**
  * {@link RecyclerView.Adapter} that can display a {@link DummyItem}.
  * TODO: Replace the implementation with code for your data type.
- */
+ *//*
 public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder> {
 
     private final List<DummyItem> mValues;
@@ -60,4 +61,4 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
             return super.toString() + " '" + mContentView.getText() + "'";
         }
     }
-}
+}*/
