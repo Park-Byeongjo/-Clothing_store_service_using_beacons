@@ -13,10 +13,13 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.ui.*
-import com.example.bss.R.id.listview
+import com.example.bss.R.id.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.coupon_row.*
 import kotlinx.android.synthetic.main.fragment_store_information.*
+import android.content.Intent;
+import android.os.PersistableBundle
+import com.example.bss.ui.setting.SettingFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // 드로어를 꺼낼 홈 버튼 활성화
         supportActionBar?.setHomeAsUpIndicator(R.drawable.menu_2) // 홈버튼 이미지 변경
-
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -53,7 +55,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
         override fun onCreateOptionsMenu(menu: Menu): Boolean {
             // Inflate the menu; this adds items to the action bar if it is present.
             menuInflater.inflate(R.menu.main, menu)
@@ -64,6 +65,4 @@ class MainActivity : AppCompatActivity() {
             val navController = findNavController(R.id.nav_host_fragment)
             return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
         }
-
-
 }
