@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "704097259600",
+    "firebase_url": "https://bss-project-b6d5b.firebaseio.com",
+    "project_id": "bss-project-b6d5b",
+    "storage_bucket": "bss-project-b6d5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704097259600:android:917c7434c6d3990a23c155",
+        "android_client_info": {
+          "package_name": "com.example.bss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704097259600-tdt2nntjasir0m0uv5djag3o9u26tut8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYAlHkUb3fKuDXq-d228Srge7y2vpzh9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704097259600-tdt2nntjasir0m0uv5djag3o9u26tut8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
