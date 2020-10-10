@@ -19,7 +19,9 @@ import kotlinx.android.synthetic.main.coupon_row.*
 import kotlinx.android.synthetic.main.fragment_store_information.*
 import android.content.Intent;
 import android.os.PersistableBundle
+import androidx.core.app.ActivityCompat
 import com.example.bss.ui.setting.SettingFragment
+import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        //ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), requestCode:1)
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
@@ -47,13 +51,16 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_nearby_clothes_list
             ), drawerLayout
         )
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
         val bnavView: BottomNavigationView = findViewById(R.id.bottom_nav_view)
         bnavView.setupWithNavController(navController)
 
+
     }
+
 
         override fun onCreateOptionsMenu(menu: Menu): Boolean {
             // Inflate the menu; this adds items to the action bar if it is present.

@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_nearby_clothes_list"
             app:destination="@id/nav_nearby_clothes_list" />
+        <action
+            android:id="@+id/action_alarm"
+            app:destination="@+id/activity_alarm"/>//activity 추가
     </fragment>
     <fragment
         android:id="@+id/nav_search"
@@ -61,4 +64,10 @@
         android:name="com.example.bss.ui.nearby_clothes.ItemFragment"
         android:label="@string/nav_nearby_clothes_list"
         tools:layout="@layout/fragment_nearby_clothes_list" />
+
+    <fragment
+        android:id="@+id/activity_alarm"
+        android:name="com.example.bss.AlarmActivity"
+        android:label="@string/alarm_comment"
+        tools:layout="@layout/activity_alarm" />
 </navigation>
