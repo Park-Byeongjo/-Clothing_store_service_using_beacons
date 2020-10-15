@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <ImageView android:layout_above="@id/signin_layout"
+    <TextView android:layout_above="@id/signin_layout"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_title" />
+        android:text="BSS Login"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+         />
 
     <LinearLayout
         android:id="@+id/signin_layout"

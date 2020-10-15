@@ -16,7 +16,7 @@ class NotificationsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.activity_alarm, container, false)
+        val root = inflater.inflate(R.layout.alarm_item, container, false)
 
         return root
     }

@@ -18,8 +18,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.coupon_row.*
 import kotlinx.android.synthetic.main.fragment_store_information.*
 import android.content.Intent;
+import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import com.example.bss.ui.AlarmActivity2
 import com.example.bss.ui.setting.SettingFragment
 import java.util.jar.Manifest
 
@@ -30,8 +33,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        ActivityCompat.requestPermissions(this,arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),1)
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // 드로어를 꺼낼 홈 버튼 활성화
         supportActionBar?.setHomeAsUpIndicator(R.drawable.menu_2) // 홈버튼 이미지 변경
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
@@ -40,6 +45,11 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         //ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), requestCode:1)
+
+        /*
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+            startActivity(Intent(this, AlarmActivity::class.java))
+        }*/
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
