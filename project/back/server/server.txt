@@ -1,3 +1,0 @@
-server
-
-manager : Byeongjo_Park
