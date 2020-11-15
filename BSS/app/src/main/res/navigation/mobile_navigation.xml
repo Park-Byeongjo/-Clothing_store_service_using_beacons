@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.bss.ui.home.HomeFragment"
+        android:name="com.example.bss.ui.search.SearchFragment"
         android:label="@string/nav_search"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/fragment_search">
 
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
@@ -24,8 +24,8 @@
             android:id="@+id/action_nav_home_to_nav_notifications"
             app:destination="@id/nav_notifications" />
         <action
-            android:id="@+id/action_nav_home_to_nav_voice"
-            app:destination="@id/nav_voice" />
+            android:id="@+id/action_nav_home_to_nav_nearby_clothes_list"
+            app:destination="@id/nav_nearby_clothes_list" />
     </fragment>
     <fragment
         android:id="@+id/nav_search"
@@ -46,9 +46,9 @@
 
     <fragment
         android:id="@+id/nav_notifications"
-        android:name="com.example.bss.ui.notifications.NotificationsFragment"
+        android:name="com.example.bss.ui.alarm.AlarmFragment"
         android:label="@string/nav_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_alarm" />
 
     <fragment
         android:id="@+id/nav_setting"
@@ -57,8 +57,8 @@
         tools:layout="@layout/fragment_setting" />
 
     <fragment
-        android:id="@+id/nav_voice"
-        android:name="com.example.bss.ui.voice.VoiceFragment"
-        android:label="@string/nav_voice"
-        tools:layout="@layout/fragment_voice" />
+        android:id="@+id/nav_nearby_clothes_list"
+        android:name="com.example.bss.ui.nearby_clothes.ItemFragment"
+        android:label="@string/nav_nearby_clothes_list"
+        tools:layout="@layout/fragment_nearby_clothes" />
 </navigation>
